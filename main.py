@@ -13,9 +13,10 @@ from math import floor
 
 app_id = os.environ.get("APP_NUTRITIONIX")
 api_key = os.environ.get("API_KEY_NUTRITIONIX")
+public_key = os.environ.get("API_PUBLIC_KEY_SHEETY")
 NUTRITION_ENDPOINT = "https://trackapi.nutritionix.com"
 NATURAL_EXERCISE_RESOURCE = "v2/natural/exercise"
-sheety_endpoint = "https://api.sheety.co/8600a5a5aed8077ee316e925c0a93a19/myWorkouts/page1"
+sheety_endpoint = f"https://api.sheety.co/{public_key}/myWorkouts/page1"
 
 
 headers = {
